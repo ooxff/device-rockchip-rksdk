@@ -481,10 +481,6 @@ endif
 PRODUCT_COPY_FILES += \
         frameworks/native/data/etc/android.hardware.ethernet.xml:system/etc/permissions/android.hardware.ethernet.xml
 
-PRODUCT_COPY_FILES += \
-	frameworks/native/data/etc/android.software.pppoe.xml:system/etc/permissions/android.software.pppoe.xml
-$(call inherit-product, external/rp-pppoe/pppoe-copy.mk)
-
 PRODUCT_PACKAGES += \
     displayd
     
