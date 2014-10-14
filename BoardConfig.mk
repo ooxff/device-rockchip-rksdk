@@ -75,7 +75,7 @@ BUILD_WITH_RK_EBOOK ?= false
 # rksu
 BUILD_WITH_RKSU ?= false
 
-USE_OPENGL_RENDERER ?= true
+USE_OPENGL_RENDERER ?= false
 
 # rk30sdk uses Cortex A9
 TARGET_EXTRA_CFLAGS += $(call cc-option,-mtune=cortex-a9,$(call cc-option,-mtune=cortex-a8)) $(call cc-option,-mcpu=cortex-a9,$(call cc-option,-mcpu=cortex-a8))
