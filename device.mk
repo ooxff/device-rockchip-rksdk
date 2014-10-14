@@ -477,9 +477,6 @@ endif
         device/rockchip/rksdk/init.usbstorage.rc:root/init.usbstorage.rc
 #endif
 
-PRODUCT_COPY_FILES += \
-        frameworks/native/data/etc/android.hardware.ethernet.xml:system/etc/permissions/android.hardware.ethernet.xml
-
 PRODUCT_PACKAGES += \
     displayd
     
