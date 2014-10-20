@@ -478,8 +478,9 @@ endif
 #endif
 
 PRODUCT_PACKAGES += \
-    displayd
-    
+    displayd \
+    ddc
+
     PRODUCT_COPY_FILES += \
         device/rockchip/rksdk/settings_disabled_menu_list.xml:system/etc/permissions/settings_disabled_menu_list.xml
 
