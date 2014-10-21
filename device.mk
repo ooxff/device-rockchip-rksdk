@@ -251,6 +251,10 @@ PRODUCT_PACKAGES += \
     acoustics.default \
     libtinyalsa
 
+# Add libandroid.so for starting service media.audio_policy
+PRODUCT_PACKAGES += \
+    libandroid
+
 PRODUCT_PACKAGES += \
 	alsa.audio.primary.$(TARGET_BOARD_HARDWARE)\
 	alsa.audio_policy.$(TARGET_BOARD_HARDWARE)
