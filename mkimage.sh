@@ -78,7 +78,7 @@ fi
 	echo -n "create misc.img.... "
 	cp -a rkst/Image/misc.img $IMAGE_PATH/misc.img
 	cp -a rkst/Image/misc_wipe_all.img $IMAGE_PATH/misc_wipe_all.img
-	cp -a rkst/Image/misc_factory_test.img $IMAGE_PATH/misc_factory_test.img
+	cp -a rkst/Image/pcba_whole_misc.img $IMAGE_PATH/pcba_whole_misc.img
 	echo "done."
 
 if [ -d $OUT/system ]
