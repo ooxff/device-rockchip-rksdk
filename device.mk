@@ -303,6 +303,7 @@ PRODUCT_TAGS += dalvik.gc.type-precise
 ifeq ($(strip $(BUILD_WITH_UMS)),true)
 	PRODUCT_PROPERTY_OVERRIDES += \
 		ro.factory.hasUMS=true \
+		persist.adb.tcp.port=5555 \
 		persist.sys.usb.config=mass_storage,adb 
        		#testing.mediascanner.skiplist = /mnt/internal_sd/Android/
 
