@@ -98,6 +98,7 @@ then
                 [ $system_size -gt "0" ] || { echo "Please make first!!!" && exit 1; }
                 MAKE_EXT4FS_ARGS=" -L system -S $OUT/root/file_contexts -a system $IMAGE_PATH/system.img $OUT/system"
 		ok=0
+		system_size=$(($system_size + 52428800))
 		while [ "$ok" = "0" ]; do
 			make_ext4fs -l $system_size $MAKE_EXT4FS_ARGS >/dev/null 2>&1 &&
 			tune2fs -c -1 -i 0 $IMAGE_PATH/system.img >/dev/null 2>&1 &&
