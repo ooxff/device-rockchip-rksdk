@@ -3,7 +3,7 @@
 # Product-specific compile-time definitions.
 #
 
-TARGET_PREBUILT_KERNEL ?= out/target/product/$(TARGET_BOARD_PLATFORM)/obj/KERNEL/arch/arm/boot/Image
+TARGET_PREBUILT_KERNEL ?= kernel/arch/arm/boot/Image
 TARGET_BOARD_PLATFORM ?= rk30xx
 TARGET_BOARD_PLATFORM_GPU ?= mali400
 TARGET_BOARD_HARDWARE ?= rk30board
