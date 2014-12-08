@@ -223,6 +223,9 @@ PRODUCT_PACKAGES += \
     charger \
     charger_res_images 
 
+# netperf
+PRODUCT_PACKAGES += \
+    netperf
 
 PRODUCT_CHARACTERISTICS := tablet
 
