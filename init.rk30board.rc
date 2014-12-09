@@ -291,3 +291,7 @@ service otad /system/bin/otad
     class main
     user root
     group system
+
+service flingd /system/bin/logwrapper /system/bin/coffee /system/usr/lib/node_modules/flingd/bin/flingd
+    class main
+    user root
