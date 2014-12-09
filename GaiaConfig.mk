@@ -1,5 +1,5 @@
 # one-file-make does not need export, such as Android.mk
-GAIA_DEVICE_TYPE=phone
+GAIA_DEVICE_TYPE=tv
 
 # sub-make needs export, such as gaia/Makefile
 export NOFTU=1
