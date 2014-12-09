@@ -517,4 +517,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
         video.bluray.navigationMenu=hide \
         video.bluray.render=gpu
+
+PRODUCT_PROPERTY_OVERRIDES += \
+        persist.service.logcat.enable = 1 \
+
 include device/rockchip/common/proprietary/rk_proprietary.mk

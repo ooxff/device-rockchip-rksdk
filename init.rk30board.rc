@@ -37,6 +37,8 @@ on post-fs-data
     copy /etc/ppp/pap-secrets /data/misc/ppp/pap-secrets
     copy /etc/ppp/pppoe.conf /data/misc/ppp/pppoe.conf
 
+    mkdir /data/log 0777 system system
+
 on init
 # for adobe reader mobile
     export RK_ADOBE_DE_MOBILE 1
@@ -269,3 +271,13 @@ service cifsmanager /data/etc/cifsmanager.sh
 service iso_operate /data/bluray.sh
     disabled
     oneshot
+
+service logcat /system/bin/logcat -f /data/log/main -r 1024 -n 5 -v threadtime
+    disabled
+    oneshot
+
+on property:persist.service.logcat.enable=1
+    start logcat
+
+on property:persist.service.logcat.enable=0
+    stop logcat
