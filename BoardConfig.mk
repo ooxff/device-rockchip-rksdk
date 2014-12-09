@@ -144,3 +144,6 @@ BUILD_WITHOUT_BATTERY := false
 
 # HDCP2.x key for Miracast, enable it only if the key is available
 BOARD_STORAGE_HAVE_HDCP2X_KEY := false
+
+# Enable librecovery
+ENABLE_LIBRECOVERY := true
