@@ -523,5 +523,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_PACKAGES += \
     configd \
+    otad \
 
 include device/rockchip/common/proprietary/rk_proprietary.mk

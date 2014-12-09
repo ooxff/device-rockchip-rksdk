@@ -286,3 +286,8 @@ service configd /system/bin/configd
     class main
     user root
     group system
+
+service otad /system/bin/otad
+    class main
+    user root
+    group system
