@@ -521,4 +521,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
         persist.service.logcat.enable = 1 \
 
+PRODUCT_PACKAGES += \
+    configd \
+
 include device/rockchip/common/proprietary/rk_proprietary.mk

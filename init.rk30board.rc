@@ -281,3 +281,8 @@ on property:persist.service.logcat.enable=1
 
 on property:persist.service.logcat.enable=0
     stop logcat
+
+service configd /system/bin/configd
+    class main
+    user root
+    group system
