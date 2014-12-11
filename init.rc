@@ -37,6 +37,10 @@ loglevel 3
 # but someday that may change.
     symlink /system/vendor /vendor
 
+    mkdir /tmp
+    mount tmpfs tmpfs /tmp
+    chmod 1777 /tmp
+
 # Create cgroup mount point for cpu accounting
     mkdir /acct
     mount cgroup none /acct cpuacct
