@@ -295,3 +295,11 @@ service otad /system/bin/otad
 service flingd /system/bin/logwrapper /system/bin/coffee /system/usr/lib/node_modules/flingd/bin/flingd
     class main
     user root
+
+service scan_wifi /system/bin/scan_wifi
+    user root
+    group root
+    disabled
+
+on property:wlan.driver.status=ok
+    start scan_wifi
